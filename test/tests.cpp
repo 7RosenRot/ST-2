@@ -1,10 +1,9 @@
 // Copyright 2025 UNN-CS Team
 
-#include "circle.h"
-#include "tasks.h"
-
 #include <gtest/gtest.h>
 #include <cstdint>
+#include "circle.h"
+#include "tasks.h"
 
 TEST(CircleTest, RadiusUpdate) {
   Circle c(10);
