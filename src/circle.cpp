@@ -1,39 +1,37 @@
 // Copyright 2022 UNN-CS
-#include <cmath>
 #include "circle.h"
+#include <cmath>
 
-Circle::Circle(double r) {
-    setRadius(r);
-}
+Circle::Circle(double r) { setRadius(r); }
 
 void Circle::updateFromRadius() {
-    ference = 2 * PI * radius;
-    area = PI * radius * radius;
+  ference = 2 * PI * radius;
+  area = PI * radius * radius;
 }
 
 void Circle::updateFromFerence() {
-    radius = ference / (2 * PI);
-    area = PI * radius * radius;
+  radius = ference / (2 * PI);
+  area = PI * radius * radius;
 }
 
 void Circle::updateFromArea() {
-    radius = std::sqrt(area / PI);
-    ference = 2 * PI * radius;
+  radius = std::sqrt(area / PI);
+  ference = 2 * PI * radius;
 }
 
 void Circle::setRadius(double r) {
-    radius = r;
-    updateFromRadius();
+  radius = r;
+  updateFromRadius();
 }
 
 void Circle::setFerence(double f) {
-    ference = f;
-    updateFromFerence();
+  ference = f;
+  updateFromFerence();
 }
 
 void Circle::setArea(double a) {
-    area = a;
-    updateFromArea();
+  area = a;
+  updateFromArea();
 }
 
 double Circle::getRadius() const { return radius; }
