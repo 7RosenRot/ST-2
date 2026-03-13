@@ -2,8 +2,9 @@
 
 #include "circle.h"
 #include "tasks.h"
-#include <cstdint>
+
 #include <gtest/gtest.h>
+#include <cstdint>
 
 TEST(CircleTest, RadiusUpdate) {
   Circle c(10);

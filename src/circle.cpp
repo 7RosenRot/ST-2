@@ -1,6 +1,6 @@
 // Copyright 2022 UNN-CS
-#include "circle.h"
 #include <cmath>
+#include "circle.h"
 
 Circle::Circle(double r) { setRadius(r); }
 
